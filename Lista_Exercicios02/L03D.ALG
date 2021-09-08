@@ -1,24 +1,23 @@
 Algoritmo "L03D"
-// Disciplina  : [Lógica de Programação e JavaScript]
+// Disciplina  : [LÃ³gica de ProgramaÃ§Ã£o e JavaScript]
 // Professor   : Jailson Costa dos Santos
-// Descrição   : Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar
-//se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução
-//se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo.
+// DescriÃ§Ã£o   : Apresentar todos os valores numÃ©ricos inteiros Ã­mpares situados na faixa de 0 a 20. Para verificar
+//se o nÃºmero Ã© Ã­mpar, efetuar dentro da malha a verificaÃ§Ã£o lÃ³gica desta condiÃ§Ã£o com a instruÃ§Ã£o
+//se, perguntando se o nÃºmero Ã© Ã­mpar; sendo, mostre-o; nÃ£o sendo, passe para o prÃ³ximo passo.
 // Autor(a)    : Pedro Lopes
 // Data atual  : 07/09/2021
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    contador:inteiro
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    contador<-1
    Enquanto contador<=20 faca
       Escreva(contador)
       contador<-contador+1
-      se contador mod 2=0 entao
-         Escreval (" : Não é ímpar!")
-      senao
-         Escreval(" : É ímpar!")
-      Fimse
+   se contador%2=1 entao
+      Escreval("O valor ",contador," Ã© Ã­mpar")
+   fimse
+   contador<-contador+1
    Fimenquanto
 Fimalgoritmo
